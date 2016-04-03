@@ -83,6 +83,14 @@ public class Client {
                 '}' + "\n";
     }
 
+    public void addMoney(int money) {
+        this.getAccount().addMoney(money);
+    }
+
+    public void substractMoney(int money) {
+        this.getAccount().substractMoney(money);
+    }
+
 
 
 }

@@ -13,19 +13,19 @@ import java.io.IOException;
  * Created by Tomasz on 31.03.2016.
  */
 @Controller
-@RequestMapping("/clients")
+@RequestMapping(value = "/clients")
 public class ClientController {
 
     @Autowired
     private ClientService clientService;
 
-    @RequestMapping("/all")
+    @RequestMapping(value = "/all")
     public String list(Model model) throws IOException {
         model.addAttribute("clients", clientService.getAllClients());
         return "clients";
     }
 
-    @RequestMapping("/{clientID}")
+    @RequestMapping(value = "/{clientID}")
     public String findClient(Model model, @PathVariable("clientID") int clientID) {
         model.addAttribute("clients", clientService.findClient(clientID));
         return "clients";

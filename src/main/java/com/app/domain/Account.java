@@ -72,4 +72,12 @@ public class Account {
                 ", currency='" + currency + '\'' +
                 '}';
     }
+
+    public void addMoney(int money) {
+        this.balance += money;
+    }
+
+    public void substractMoney(int money) {
+        this.balance -= money;
+    }
 }
