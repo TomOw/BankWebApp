@@ -18,4 +18,6 @@ public interface ClientRepository {
 
     List<Client> findClient(int id);
 
+    void addClient(Client client) throws IOException;
+
 }

@@ -27,4 +27,8 @@ public class ClientServiceImpl implements ClientService{
         return clientRepository.findClient(id);
 
     }
+
+    public void addClient(Client client) throws IOException {
+        clientRepository.addClient(client);
+    }
 }

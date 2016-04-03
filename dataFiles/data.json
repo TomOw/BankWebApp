@@ -1,4 +1,20 @@
-{"name":"Bonf","id":1001,"account":{"number":100001,"currency":"BONDS","balance":7}}
-{"name":"isngfaoi","id":1002,"account":{"number":100002,"currency":"oiansof","balance":9}}
-{"name":"sinfoai","id":1003,"account":{"number":100003,"currency":"sioanfo","balance":900909}}
-{"name":"ifansoifn","id":1004,"account":{"number":100004,"currency":"ankjsfn","balance":889}}
+{"name":"pierwszy","id":0,"account":null}
+{"name":"druggi","id":0,"account":null}
+{"name":"czeci","id":0,"account":null}
+{"name":"piaty","id":0,"account":null}
+{"name":"czeci","id":0,"account":null}
+{"name":"piay","id":0,"account":null}
+{"name":"czemu nie dziala id","id":0,"account":null}
+{"name":"testowy super klient","id":0,"account":null}
+{"name":"testowy klient","id":0,"account":null}
+{"name":null,"id":0,"account":{"number":911,"currency":"euro gabki","balance":911}}
+{"name":"tym razem nie testowy klient","id":0,"account":null}
+{"name":null,"id":0,"account":{"number":911,"currency":"euro gabki","balance":911}}
+{"name":"zielony typ","id":0,"account":null}
+{"name":"testusz","id":1002,"account":null}
+{"name":"HALOHALO","id":1002,"account":null}
+{"name":"issue","id":1002,"account":null}
+{"name":"3 issue","id":1002,"account":null}
+{"name":"krecik","id":1002,"account":null}
+{"name":"zajaczek","id":1002,"account":null}
+{"name":"robaczek","id":1002,"account":null}

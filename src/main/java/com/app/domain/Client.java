@@ -20,6 +20,16 @@ public class Client {
     }
 
     public Client() {
+        System.out.println("a moze tego");
+    }
+
+    public Client(boolean useNextId){
+        if (useNextId) {
+            this.id = nextID.incrementAndGet();
+        }else {
+
+        }
+        System.out.println("uzyto konstruktora" + useNextId);
     }
 
     public Client(int id, String name) {
@@ -37,6 +47,11 @@ public class Client {
         this.id = nextID.incrementAndGet();
         this.name = name;
         this.account = account;
+    }
+
+    public Client(Account account) {
+        this.account = account;
+        System.out.println("uzycie konstruktora z kontem");
     }
 
     public int getId() {

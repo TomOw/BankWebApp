@@ -24,6 +24,7 @@
     <div class="row">
         <div class="col-sm-2">
             <a href="/"><input type="button" value="Home" class="btn btn-lg btn-primary"/></a>
+            <a href="/clients/add"><input type="button" value="Add Client" class="btn btn-lg btn-primary"/></a>
         </div>
     </div>
     <section class="container">
