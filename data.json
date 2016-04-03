@@ -1,0 +1,15 @@
+{"name":"James","id":1001,"account":{"number":100001,"balance":7,"currency":"EUR"}}
+{"name":"Bond","id":1002,"account":{"number":100002,"balance":8,"currency":"GBP"}}
+{"name":"rikitiki","id":1003,"account":{"number":100003,"balance":10000,"currency":"GANJ"}}
+{"name":"James","id":1001,"account":{"number":100001,"balance":7,"currency":"BPG"}}
+{"name":"BOND","id":1002,"account":{"number":100002,"balance":8,"currency":"Eur"}}
+{"name":"Janusz","id":1003,"account":{"number":100003,"balance":124124,"currency":"PLN"}}
+{"name":"James","id":1001,"account":{"number":100001,"balance":7,"currency":"GBP"}}
+{"name":"BOND","id":1002,"account":{"number":100002,"balance":8,"currency":"PLN"}}
+{"name":"JAMES","id":1001,"account":{"number":100001,"balance":7,"currency":"PLN"}}
+{"name":"BONF","id":1002,"account":{"number":100002,"balance":192,"currency":"iansgoi"}}
+{"name":"iagoai","id":1003,"account":{"number":100003,"balance":89,"currency":"augn]"}}
+{"name":"jnijai","id":1001,"account":{"number":100001,"balance":989,"currency":"jubi"}}
+{"name":"nofdino","id":1002,"account":{"number":100002,"balance":909,"currency":"idfno"}}
+{"name":"findoinf","id":1003,"account":{"number":100003,"balance":900,"currency":"fniodn"}}
+{"name":"idnfoifn","id":1004,"account":{"number":100004,"balance":90098,"currency":"dfno"}}
