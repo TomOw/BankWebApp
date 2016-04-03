@@ -23,8 +23,8 @@ public class ClientServiceImpl implements ClientService{
         return clientRepository.getListOfClients();
     }
 
-    public List<Client> findClient(int id) {
-        return clientRepository.findClient(id);
+    public List<Client> findClient(String name) {
+        return clientRepository.findClient(name);
 
     }
 

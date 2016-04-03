@@ -26,7 +26,7 @@ public class Account {
     }
 
     public Account() {
-        this.number = accNumber.incrementAndGet();
+
     }
 
     public long getNumber() {

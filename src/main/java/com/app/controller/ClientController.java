@@ -28,25 +28,24 @@ public class ClientController {
         return "clients";
     }
 
-    @RequestMapping(value = "/{clientID}")
-    public String findClient(Model model, @PathVariable("clientID") int clientID) {
-        model.addAttribute("clients", clientService.findClient(clientID));
+    @RequestMapping(value = "/{clientName}")
+    public String findClient(Model model, @PathVariable("clientName") String name) {
+        model.addAttribute("clients", clientService.findClient(name));
         return "clients";
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String getAddNewClientForm(Model model) throws IOException {
-        Client newClient = new Client(true);
-        model.addAttribute("clientId", newClient.getId());
-        model.addAttribute("newClient", newClient);
+        Client client = new Client(false);
+        model.addAttribute("newClient", client);
         return "addClientForm";
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public String processAddNewClientForm(@ModelAttribute("newClient") Client newClient,
-                                          @ModelAttribute("clientId") int id) throws IOException {
-        newClient.setId(id);
-        System.out.println(newClient.toString());
+    public String processAddNewClientForm(@ModelAttribute("newClient") Client newClient) throws IOException {
+        Client client = new Client(newClient.getName());
+        System.out.println(client.toString());
+        clientService.addClient(client);
         return "redirect:/clients/all";
     }
 }

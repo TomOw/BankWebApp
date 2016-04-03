@@ -1,6 +1,5 @@
 package com.app.domain.repository.impl;
 
-import com.app.domain.Account;
 import com.app.domain.Client;
 import org.codehaus.jackson.map.ObjectMapper;
 
@@ -18,13 +17,8 @@ public class mainTest {
         List<Client> list = jsonClientRepository.getListOfClients();
         System.out.println(list.toString());
         System.out.println(list.get(1).getAccount().getCurrency());
-        Client client = new Client(100, new Account(1000,1000,"EURO"), "LOLL");
-        Client client2 = new Client(500, new Account(1000,1000,"EURO"), "GOU");
-        jsonClientRepository.addClient(client);
-        jsonClientRepository.addClient(client2);
         System.out.println(jsonClientRepository.getListOfClients().toString());
         System.out.println("szukany klient:");
-        System.out.println(jsonClientRepository.findClient(500));
         System.out.println(new Client());
         System.out.println(new Client());
         System.out.println(new Client());

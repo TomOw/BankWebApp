@@ -1,50 +1,48 @@
 package com.app.domain;
 
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.UUID;
 
 /**
  * Created by Tomasz on 30.03.2016.
  */
 public class Client {
 
-    private int id;
+    private String id;
     private String name;
     private Account account;
 
-    private static AtomicInteger nextID = new AtomicInteger(1000);
-
-    public Client(int id, Account account, String name) {
+/*    public Client(UUID id, Account account, String name) {
         this.id = id;
         this.account = account;
         this.name = name;
-    }
+    }*/
 
     public Client() {
         System.out.println("a moze tego");
     }
 
-    public Client(boolean useNextId){
-        if (useNextId) {
-            this.id = nextID.incrementAndGet();
+    public Client(boolean useUUID){
+        if (useUUID) {
+            this.id = UUID.randomUUID().toString();
         }else {
 
         }
-        System.out.println("uzyto konstruktora" + useNextId);
+        System.out.println("uzyto konstruktora" + useUUID);
     }
 
-    public Client(int id, String name) {
+/*    public Client(UUID id, String name) {
         this.id = id;
         this.name = name;
-    }
+    }*/
 
     public Client(String name) {
-        this.id = nextID.incrementAndGet();
+        this.id = UUID.randomUUID().toString();
         this.name = name;
         this.account = new Account();
     }
 
     public Client(String name, Account account) {
-        this.id = nextID.incrementAndGet();
+        this.id = UUID.randomUUID().toString();
         this.name = name;
         this.account = account;
     }
@@ -54,11 +52,11 @@ public class Client {
         System.out.println("uzycie konstruktora z kontem");
     }
 
-    public int getId() {
-        return id;
+    public String getId() {
+        return this.id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

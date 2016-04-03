@@ -1,20 +1,9 @@
-{"name":"pierwszy","id":0,"account":null}
-{"name":"druggi","id":0,"account":null}
-{"name":"czeci","id":0,"account":null}
-{"name":"piaty","id":0,"account":null}
-{"name":"czeci","id":0,"account":null}
-{"name":"piay","id":0,"account":null}
-{"name":"czemu nie dziala id","id":0,"account":null}
-{"name":"testowy super klient","id":0,"account":null}
-{"name":"testowy klient","id":0,"account":null}
-{"name":null,"id":0,"account":{"number":911,"currency":"euro gabki","balance":911}}
-{"name":"tym razem nie testowy klient","id":0,"account":null}
-{"name":null,"id":0,"account":{"number":911,"currency":"euro gabki","balance":911}}
-{"name":"zielony typ","id":0,"account":null}
-{"name":"testusz","id":1002,"account":null}
-{"name":"HALOHALO","id":1002,"account":null}
-{"name":"issue","id":1002,"account":null}
-{"name":"3 issue","id":1002,"account":null}
-{"name":"krecik","id":1002,"account":null}
-{"name":"zajaczek","id":1002,"account":null}
-{"name":"robaczek","id":1002,"account":null}
+{"name":null,"id":"9dca87a8-f7e6-4a1b-a773-292cf5e33420","account":null}
+{"name":null,"id":"9f2a8182-a8e7-46ab-9752-760c1196f43c","account":null}
+{"name":null,"id":"77506da6-e832-484d-9537-01f3dfe380cc","account":null}
+{"name":null,"id":"7033c610-98e4-4b7e-b2f9-d957062b6643","account":null}
+{"name":null,"id":"08509bde-2f1c-4ec0-83d6-63faf643b7c3","account":null}
+{"name":"bvausbdiaus","id":"6070b109-7f6a-45e4-960f-2ca90861e0b3","account":{"number":100001,"currency":null,"balance":0}}
+{"name":"test","id":"a5883726-a2fb-460e-89f0-1a8a82740cac","account":{"number":100003,"currency":null,"balance":0}}
+{"name":"tesciot","id":"da09b22f-b4b9-4e6c-8315-5d17fe8d4d74","account":{"number":100006,"currency":null,"balance":0}}
+{"name":"thwerthw11515521","id":"3a436522-6c57-4fb5-99f7-0976b85e77b7","account":{"number":0,"currency":null,"balance":0}}

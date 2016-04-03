@@ -12,7 +12,7 @@ public interface ClientService {
 
     List<Client> getAllClients() throws IOException;
 
-    List<Client> findClient(int id);
+    List<Client> findClient(String name);
 
     void addClient(Client client) throws IOException;
 }

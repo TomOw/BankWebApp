@@ -53,11 +53,11 @@ public class JsonClientRepository implements ClientRepository{
 
     }
 
-    public List<Client> findClient(int id) throws IllegalArgumentException{
+    public List<Client> findClient(String name) throws IllegalArgumentException{
         List<Client> foundList = new ArrayList<Client>();
         for (Client client :
                 listOfClients) {
-            if (client.getId() == id) {
+            if (client.getName().equals(name)) {
                 foundList.add(client);
                 return foundList;
             }

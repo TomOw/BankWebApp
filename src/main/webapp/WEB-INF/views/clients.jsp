@@ -29,8 +29,9 @@
     </div>
     <section class="container">
         <ul class="list-group">
-            <c:forEach items="${clients}" var="client">
+            <c:forEach items="${clients}" var="client" varStatus="theCount">
                 <li class="list-group-item">
+                    <h2>${theCount.count}</h2>
                     <h3>${client.name}</h3>
                     <p>ID: ${client.id}</p>
                     <h4>Account deatils:</h4>
