@@ -11,14 +11,8 @@ public class Client {
     private String name;
     private Account account;
 
-/*    public Client(UUID id, Account account, String name) {
-        this.id = id;
-        this.account = account;
-        this.name = name;
-    }*/
 
     public Client() {
-        System.out.println("a moze tego");
     }
 
     public Client(boolean useUUID){
@@ -27,13 +21,7 @@ public class Client {
         }else {
 
         }
-        System.out.println("uzyto konstruktora" + useUUID);
     }
-
-/*    public Client(UUID id, String name) {
-        this.id = id;
-        this.name = name;
-    }*/
 
     public Client(String name) {
         this.id = UUID.randomUUID().toString();
@@ -49,7 +37,6 @@ public class Client {
 
     public Client(Account account) {
         this.account = account;
-        System.out.println("uzycie konstruktora z kontem");
     }
 
     public String getId() {
