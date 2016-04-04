@@ -1,6 +1,7 @@
 package com.app.domain.repository;
 
 import com.app.domain.Client;
+import com.app.domain.Transfer;
 import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
@@ -21,5 +22,7 @@ public interface ClientRepository {
     void addClient(Client client) throws IOException;
 
     Client getClientByName(String name) throws IllegalArgumentException;
+
+    void makeTransfer(Transfer transfer) throws IOException;
 
 }

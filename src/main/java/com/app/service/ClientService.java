@@ -1,6 +1,7 @@
 package com.app.service;
 
 import com.app.domain.Client;
+import com.app.domain.Transfer;
 
 import java.io.IOException;
 import java.util.List;
@@ -17,4 +18,6 @@ public interface ClientService {
     void addClient(Client client) throws IOException;
 
     Client getClientByName(String name) throws IllegalArgumentException;
+
+    void makeTransfer(Transfer transfer) throws IOException;
 }

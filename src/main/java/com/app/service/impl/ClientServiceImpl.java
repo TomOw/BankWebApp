@@ -1,6 +1,7 @@
 package com.app.service.impl;
 
 import com.app.domain.Client;
+import com.app.domain.Transfer;
 import com.app.domain.repository.ClientRepository;
 import com.app.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,5 +35,9 @@ public class ClientServiceImpl implements ClientService{
 
     public Client getClientByName(String name) throws IllegalArgumentException {
         return clientRepository.getClientByName(name);
+    }
+
+    public void makeTransfer(Transfer transfer) throws IOException{
+        clientRepository.makeTransfer(transfer);
     }
 }
