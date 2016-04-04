@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicLong;
 public class Account {
 
     private long number;
-    private int balance;
+    private double balance;
     private String currency;
 
     static AtomicLong accNumber = new AtomicLong(100000);
@@ -45,11 +45,11 @@ public class Account {
         this.currency = currency;
     }
 
-    public int getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(int balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 

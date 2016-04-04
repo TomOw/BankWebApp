@@ -64,4 +64,14 @@ public class JsonClientRepository implements ClientRepository{
         }
         throw new IllegalArgumentException("nie znaleziono takiego klienta");
     }
+
+    public Client getClientByName(String name) throws IllegalArgumentException{
+        for (Client client:
+             listOfClients) {
+            if (client.getName().equals(name)) {
+                return client;
+            }
+        }
+        throw new IllegalArgumentException("nie znaleziono takiego klienta");
+    }
 }

@@ -20,4 +20,6 @@ public interface ClientRepository {
 
     void addClient(Client client) throws IOException;
 
+    Client getClientByName(String name) throws IllegalArgumentException;
+
 }

@@ -31,4 +31,8 @@ public class ClientServiceImpl implements ClientService{
     public void addClient(Client client) throws IOException {
         clientRepository.addClient(client);
     }
+
+    public Client getClientByName(String name) throws IllegalArgumentException {
+        return clientRepository.getClientByName(name);
+    }
 }

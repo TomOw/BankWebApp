@@ -15,4 +15,6 @@ public interface ClientService {
     List<Client> findClient(String name);
 
     void addClient(Client client) throws IOException;
+
+    Client getClientByName(String name) throws IllegalArgumentException;
 }
