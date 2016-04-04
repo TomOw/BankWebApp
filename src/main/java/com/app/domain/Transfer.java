@@ -6,13 +6,13 @@ package com.app.domain;
 public class Transfer {
 
     private int accountFrom;
-    private Account accountTo;
+    private int accountTo;
     private double value;
     private String sender;
     private String receiver;
     private String title;
 
-    public Transfer(int accountFrom, Account accountTo, double value, String sender, String receiver, String title) {
+    public Transfer(int accountFrom, int accountTo, double value, String sender, String receiver, String title) {
         this.accountFrom = accountFrom;
         this.accountTo = accountTo;
         this.value = value;
@@ -37,11 +37,11 @@ public class Transfer {
         this.accountFrom = accountFrom;
     }
 
-    public Account getAccountTo() {
+    public int getAccountTo() {
         return accountTo;
     }
 
-    public void setAccountTo(Account accountTo) {
+    public void setAccountTo(int accountTo) {
         this.accountTo = accountTo;
     }
 

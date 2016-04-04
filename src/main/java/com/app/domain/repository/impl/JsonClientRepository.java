@@ -1,6 +1,8 @@
 package com.app.domain.repository.impl;
 
+import com.app.domain.Account;
 import com.app.domain.Client;
+import com.app.domain.Transfer;
 import com.app.domain.repository.ClientRepository;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.stereotype.Repository;
@@ -73,5 +75,40 @@ public class JsonClientRepository implements ClientRepository{
             }
         }
         throw new IllegalArgumentException("nie znaleziono takiego klienta");
+    }
+
+    public Account findAccount(int number) throws IllegalArgumentException{
+        for (Client client:
+             listOfClients) {
+            if (client.getAccount().getNumber() == number) {
+                return client.getAccount();
+            }
+        }
+        throw new IllegalArgumentException("nie znaleziono takiego konta");
+    }
+
+    public void saveToFile() throws IOException {
+        ObjectMapper mapper = new ObjectMapper();
+        File file = new File("/Users/Tomasz/Documents/Java/AppInSpring/dataFiles/data.json");
+        FileWriter fileWriter = new FileWriter(file, false);
+        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+        for (Client client :
+                listOfClients) {
+            String str = mapper.writeValueAsString(client);
+            str += "\n";
+            bufferedWriter.write(str);
+        }
+        bufferedWriter.close();
+    }
+
+    public void makeTransfer(Transfer transfer) throws IOException {
+        int from = transfer.getAccountFrom();
+        int to = transfer.getAccountTo();
+        double value = transfer.getValue();
+        Account accFrom = findAccount(from);
+        Account accTo = findAccount(to);
+        accFrom.substractMoney(value);
+        accTo.addMoney(value);
+        accFrom.addTransferToHistory(transfer);
     }
 }

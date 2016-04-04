@@ -1,5 +1,7 @@
 package com.app.domain;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
@@ -10,6 +12,7 @@ public class Account {
     private long number;
     private double balance;
     private String currency;
+    private List<Transfer> transferHistory;
 
     static AtomicLong accNumber = new AtomicLong(100000);
 
@@ -17,16 +20,18 @@ public class Account {
         this.number = number;
         this.balance = balance;
         this.currency = currency;
+        transferHistory = new ArrayList<Transfer>();
     }
 
     public Account(String currency, int balance) {
         this.currency = currency;
         this.number = accNumber.incrementAndGet();
         this.balance = balance;
+        transferHistory = new ArrayList<Transfer>();
     }
 
     public Account() {
-
+        transferHistory = new ArrayList<Transfer>();
     }
 
     public long getNumber() {
@@ -53,6 +58,14 @@ public class Account {
         this.balance = balance;
     }
 
+    public void addTransferToHistory(Transfer transfer) {
+        this.transferHistory.add(transfer);
+    }
+
+    public List<Transfer> getTransferHistory() {
+        return transferHistory;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -70,14 +83,15 @@ public class Account {
                 "number=" + number +
                 ", balance=" + balance +
                 ", currency='" + currency + '\'' +
+                ", transferHistory=" + transferHistory +
                 '}';
     }
 
-    public void addMoney(int money) {
+    public void addMoney(double money) {
         this.balance += money;
     }
 
-    public void substractMoney(int money) {
+    public void substractMoney(double money) {
         this.balance -= money;
     }
 }

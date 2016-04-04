@@ -1,4 +1,4 @@
-{"name":"Bond","id":"ff3f3c13-40e1-47f6-af79-aa9253afb02c","account":{"number":100001,"balance":7.0,"currency":"Bonds"}}
-{"name":"James","id":"2961f3ff-f650-4685-b2fc-ec055004d881","account":{"number":100002,"balance":8.0,"currency":"Jamsons"}}
-{"name":"Elo","id":"8bc9974d-93bb-441a-ad7d-f889b924536b","account":{"number":100003,"balance":10.0,"currency":"USD"}}
-{"name":"Yolo","id":"c3eb1de4-8f42-45f4-9006-a4ada4d46721","account":{"number":100004,"balance":1005.0,"currency":"PLN"}}
+{"name":"Bonf","id":"1001","account":{"number":100001,"balance":-93.99,"transferHistory":[{"value":100.99,"accountFrom":100001,"accountTo":100002,"title":"testowy","sender":"Bond","receiver":"James"}],"currency":"BONDS"}}
+{"name":"isngfaoi","id":"1002","account":{"number":100002,"balance":109.99,"transferHistory":[],"currency":"oiansof"}}
+{"name":"sinfoai","id":"1003","account":{"number":100003,"balance":900909.0,"transferHistory":[],"currency":"sioanfo"}}
+{"name":"ifansoifn","id":"1004","account":{"number":100004,"balance":889.0,"transferHistory":[],"currency":"ankjsfn"}}
