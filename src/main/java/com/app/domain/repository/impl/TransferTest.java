@@ -18,17 +18,16 @@ public class TransferTest {
         transfer.toString();
         repository.readFromFile();
         repository.makeTransfer(transfer);
+        System.out.println(transfer.getDate());
         for (Client client :
                 repository.getListOfClients()) {
-            System.out.println(client.toString());
         }
-        repository.saveToFile();
         Client test = repository.getClientByName("Bonf");
         String s = mapper.writeValueAsString(test);
         System.out.println("_____________________");
-        System.out.println(test.getAccount().getTransferHistory().toString());
-        System.out.println(test.getAccount().getTransferHistory().getClass());
-        System.out.println(s);
+        //System.out.println(test.getAccount().getTransferHistory().toString());
+        //System.out.println(test.getAccount().getTransferHistory().getClass());
+        System.out.println("___________BONF W STRINGU JAKO JSON: " + s);
         Client watchOut = mapper.readValue(s, Client.class);
         System.out.println(watchOut);
 

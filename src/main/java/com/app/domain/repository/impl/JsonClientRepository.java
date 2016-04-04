@@ -11,7 +11,9 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Scanner;
 
@@ -110,5 +112,8 @@ public class JsonClientRepository implements ClientRepository{
         accFrom.substractMoney(value);
         accTo.addMoney(value);
         accFrom.addTransferToHistory(transfer);
+        transfer.setDate(new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().getTime()));
+        saveToFile();
+
     }
 }

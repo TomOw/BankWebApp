@@ -1,5 +1,7 @@
 package com.app.domain.repository.impl;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.UUID;
 
 /**
@@ -10,6 +12,8 @@ public class uuidTest {
         UUID id = UUID.randomUUID();
         System.out.println(id);
         System.out.println(id.equals(id));
-        System.out.println("halo");
+
+        String s = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().getTime());
+        System.out.println(s);
     }
 }

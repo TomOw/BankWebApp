@@ -11,6 +11,7 @@ public class Transfer {
     private String sender;
     private String receiver;
     private String title;
+    private String date;
 
     public Transfer(int accountFrom, int accountTo, double value, String sender, String receiver, String title) {
         this.accountFrom = accountFrom;
@@ -19,14 +20,17 @@ public class Transfer {
         this.sender = sender;
         this.receiver = receiver;
         this.title = title;
+        this.date = "";
     }
 
     public Transfer() {
+        this.date = "";
     }
 
     public Transfer(String sender, int accountFrom) {
         this.sender = sender;
         this.accountFrom = accountFrom;
+        this.date = "";
     }
 
     public int getAccountFrom() {
@@ -77,6 +81,15 @@ public class Transfer {
         this.title = title;
     }
 
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getDate() {
+
+        return date;
+    }
+
     @Override
     public String toString() {
         return "Transfer{" +
@@ -86,6 +99,7 @@ public class Transfer {
                 ", sender='" + sender + '\'' +
                 ", receiver='" + receiver + '\'' +
                 ", title='" + title + '\'' +
+                ", date='" + date + '\'' +
                 '}';
     }
 }
