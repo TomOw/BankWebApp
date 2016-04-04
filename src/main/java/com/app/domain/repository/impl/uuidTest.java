@@ -10,5 +10,6 @@ public class uuidTest {
         UUID id = UUID.randomUUID();
         System.out.println(id);
         System.out.println(id.equals(id));
+        System.out.println("halo");
     }
 }
