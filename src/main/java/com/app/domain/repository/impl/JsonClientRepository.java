@@ -118,4 +118,8 @@ public class JsonClientRepository implements ClientRepository{
         saveToFile();
 
     }
+
+    public void addAccount(String userName, Account account) {
+        getClientByName(userName).setAccount(account);
+    }
 }

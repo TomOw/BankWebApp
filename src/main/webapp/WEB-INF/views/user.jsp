@@ -56,6 +56,9 @@
                 <p><a href="/clients/all"><button type="button" class="btn btn-md btn-primary">
                     <span class="glyphicons glyphicons-chevron-left"></span>Back
                 </button></a></p>
+                <p><a href="/user/${user.name}/addAccount"><button type="button" class="btn btn-md btn-primary">
+                    <span class="glyphicons glyphicons-chevron-left"></span>Add Account
+                </button></a></p>
             </li>
         </ul>
     </section>

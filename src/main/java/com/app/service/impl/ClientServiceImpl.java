@@ -1,5 +1,6 @@
 package com.app.service.impl;
 
+import com.app.domain.Account;
 import com.app.domain.Client;
 import com.app.domain.Transfer;
 import com.app.domain.repository.ClientRepository;
@@ -39,5 +40,13 @@ public class ClientServiceImpl implements ClientService{
 
     public void makeTransfer(Transfer transfer) throws IOException{
         clientRepository.makeTransfer(transfer);
+    }
+
+    public void addAccount(String name, Account account) {
+        clientRepository.addAccount(name,account);
+    }
+
+    public void saveToFile() throws IOException{
+        clientRepository.saveToFile();
     }
 }

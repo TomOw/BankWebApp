@@ -34,7 +34,11 @@
             <artifactId>jackson-mapper-asl</artifactId>
             <version>1.5.1</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.stormpath.spring</groupId>
+            <artifactId>stormpath-spring-security</artifactId>
+            <version>1.0.RC7.7</version>
+        </dependency>
     </dependencies>
     <packaging>war</packaging>
 

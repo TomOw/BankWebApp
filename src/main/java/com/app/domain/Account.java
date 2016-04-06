@@ -16,14 +16,14 @@ public class Account {
 
     static AtomicLong accNumber = new AtomicLong(100000);
 
-    public Account(long number, int balance, String currency) {
+    public Account(long number, double balance, String currency) {
         this.number = number;
         this.balance = balance;
         this.currency = currency;
         transferHistory = new ArrayList<Transfer>();
     }
 
-    public Account(String currency, int balance) {
+    public Account(String currency, double balance) {
         this.currency = currency;
         this.number = accNumber.incrementAndGet();
         this.balance = balance;

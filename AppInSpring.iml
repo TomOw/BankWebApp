@@ -34,6 +34,11 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jstl-1.2" level="project" />
+    <orderEntry type="library" name="org.springframework.security:spring-security-core:4.0.4.RELEASE" level="project" />
+    <orderEntry type="library" name="spring-security-core-4.0.4.RELEASE" level="project" />
+    <orderEntry type="library" name="4.0.4" level="project" />
+    <orderEntry type="library" name="3.1.4" level="project" />
+    <orderEntry type="library" name="3.2.7" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:4.2.4.RELEASE" level="project" />
@@ -48,5 +53,22 @@
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.5.1" level="project" />
+    <orderEntry type="library" name="Maven: com.stormpath.spring:stormpath-spring-security:1.0.RC7.7" level="project" />
+    <orderEntry type="library" name="Maven: com.stormpath.spring:stormpath-spring:1.0.RC7.7" level="project" />
+    <orderEntry type="library" name="Maven: com.stormpath.sdk:stormpath-sdk-api:1.0.RC7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.8" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:4.0.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-config:4.0.3.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.stormpath.sdk:stormpath-sdk-httpclient:1.0.RC7.7" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.stormpath.sdk:stormpath-sdk-impl:1.0.RC7.7" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: io.jsonwebtoken:jjwt:0.5.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.4.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.4.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.fasterxml.jackson.core:jackson-core:2.4.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: joda-time:joda-time:2.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.httpcomponents:httpclient:4.2.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.apache.httpcomponents:httpcore:4.2.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: commons-codec:commons-codec:1.6" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:jcl-over-slf4j:1.7.8" level="project" />
   </component>
 </module>

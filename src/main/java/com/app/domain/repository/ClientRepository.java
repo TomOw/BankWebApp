@@ -1,5 +1,6 @@
 package com.app.domain.repository;
 
+import com.app.domain.Account;
 import com.app.domain.Client;
 import com.app.domain.Transfer;
 import org.springframework.stereotype.Repository;
@@ -25,4 +26,7 @@ public interface ClientRepository {
 
     void makeTransfer(Transfer transfer) throws IOException;
 
+    void addAccount(String name, Account account);
+
+    void saveToFile() throws IOException;
 }
