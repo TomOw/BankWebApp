@@ -1,4 +1,7 @@
-{"name":"Bonf","id":"1001","account":{"number":100001,"balance":-93.99,"transferHistory":[{"value":100.99,"accountFrom":100001,"accountTo":100002,"receiver":"James","title":"testowy","sender":"Bond","date":"2016/04/04 20:24:16"}],"currency":"BONDS"}}
-{"name":"isngfaoi","id":"1002","account":{"number":100002,"balance":100.0,"transferHistory":[{"value":9.99,"accountFrom":100002,"accountTo":100004,"receiver":"tescior","title":"tescik","sender":"test","date":"2016/04/05 00:36:27"}],"currency":"oiansof"}}
-{"name":"sinfoai","id":"1003","account":{"number":100003,"balance":900909.0,"transferHistory":[],"currency":"sioanfo"}}
-{"name":"ifansoifn","id":"1004","account":{"number":100004,"balance":898.99,"transferHistory":[],"currency":"ankjsfn"}}
+{"name":"Bond","id":"ff3f3c13-40e1-47f6-af79-aa9253afb02c","account":{"number":100001,"balance":-992.0,"transferHistory":[{"value":-999.0,"sender":"Bond","title":"testowy przelew","receiver":"Yolo","accountFrom":100001,"accountTo":100002,"date":"2016/04/06 12:54:19"}],"currency":"Bonds"}}
+{"name":"James","id":"2961f3ff-f650-4685-b2fc-ec055004d881","account":{"number":100002,"balance":1007.0,"transferHistory":[{"value":-999.0,"sender":"Bond","title":"testowy przelew","receiver":"Yolo","accountFrom":100001,"accountTo":100002,"date":"2016/04/06 12:54:19"}],"currency":"Jamsons"}}
+{"name":"Elo","id":"8bc9974d-93bb-441a-ad7d-f889b924536b","account":{"number":100003,"balance":10.0,"transferHistory":[],"currency":"USD"}}
+{"name":"Yolo","id":"c3eb1de4-8f42-45f4-9006-a4ada4d46721","account":{"number":100004,"balance":1005.0,"transferHistory":[],"currency":"PLN"}}
+{"name":"nowy Klient","id":"0dff1295-4f11-4e4f-a70e-0a2a143bba16","account":{"number":0,"balance":0.0,"transferHistory":[{"value":-0.0,"sender":"","title":"","receiver":"","accountFrom":0,"accountTo":0,"date":"2016/04/06 13:43:05"},{"value":-0.0,"sender":"","title":"","receiver":"","accountFrom":0,"accountTo":0,"date":"2016/04/06 13:43:05"}],"currency":null}}
+{"name":"kolejny nowy klient","id":"769e95fe-7f4a-483f-a237-f60da6c53374","account":{"number":0,"balance":0.0,"transferHistory":[],"currency":null}}
+{"name":"jeszcze jeden nowy klient","id":"6c7d7406-cff1-4773-a4f1-965efd337165","account":{"number":0,"balance":0.0,"transferHistory":[],"currency":null}}

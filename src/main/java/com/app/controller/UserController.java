@@ -7,6 +7,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.io.IOException;
+
 /**
  * Created by Tomasz on 04.04.2016.
  */
@@ -18,7 +20,8 @@ public class UserController {
     private ClientService clientService;
 
     @RequestMapping("/{userName}")
-    public String getUserProfile(Model model, @PathVariable("userName") String name) {
+    public String getUserProfile(Model model, @PathVariable("userName") String name) throws IOException {
+        clientService.getAllClients();
         model.addAttribute("user", clientService.getClientByName(name));
         return "user";
     }

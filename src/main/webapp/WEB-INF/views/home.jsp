@@ -10,7 +10,7 @@
 <html>
 <head>
     <link href="<c:url value="/resources/css/bootstrap.css"/>" rel="stylesheet">
-    <title>Title</title>
+    <title>Home</title>
 </head>
 <body>
     <div class="jumbotron">
@@ -20,7 +20,15 @@
     </div>
     <div class="row">
         <div class="col-sm-2">
-            <a href="/clients/all"><input type="button" value="All Clients" class="btn btn-lg btn-primary"></a>
+            <p><a href="/clients/all"><button type="button" class="btn btn-md btn-primary">
+                <span class="glyphicon glyphicon-eye-open"></span>All Clients
+            </button></a></p>
+            <p><a href="/transfer/make"><button type="button" class="btn btn-md btn-primary">
+                <span class="glyphicon glyphicon-sound-stereo"></span>Make transfer
+            </button></a></p>
+            <p><a href="/clients/add"><button type="button" class="btn btn-md btn-primary">
+                <span class="glyphicons glyphicon-fees-payment"></span>Add client
+            </button></a></p>
         </div>
     </div>
     <div class="row">

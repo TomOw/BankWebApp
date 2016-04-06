@@ -10,8 +10,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link href="<c:url value="/resources/css/bootstrap.css"/>" rel="stylesheet">
-    <title>Title</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <title>Transfer</title>
 </head>
 <body>
     <section>
@@ -58,7 +58,9 @@
                     </div>
                     <div class="form-group">
                         <div class="col-lg-offset-2 col-lg-10">
-                            <input type="submit" class="btn btn-primary" value="Proceed">
+                            <button type="submit" class="btn btn-md btn-primary">
+                                <span class="glyphicons glyphicons-ok"></span>Submit
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -111,6 +111,8 @@ public class JsonClientRepository implements ClientRepository{
         Account accTo = findAccount(to);
         accFrom.substractMoney(value);
         accTo.addMoney(value);
+        accTo.addTransferToHistory(transfer);
+        transfer.setValue(-value);
         accFrom.addTransferToHistory(transfer);
         transfer.setDate(new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().getTime()));
         saveToFile();
