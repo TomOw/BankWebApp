@@ -34,6 +34,7 @@ public class UserController {
     public String getNewAccountForm(Model model, @PathVariable("userName") String name) throws IOException {
         clientService.getAllClients();
         Account newAccount = new Account();
+        newAccount.setNumber(Account.accNumber.get() + 1);
         model.addAttribute("newAccount", newAccount);
         System.out.println("test debugowaniea");
         return "addAccountForm";
@@ -43,12 +44,13 @@ public class UserController {
     public String processNewAccount(@ModelAttribute ("newAccount") Account newAccount, @PathVariable("userName") String name) throws IOException{
         clientService.getAllClients();
         System.out.println("imie klienta: " + name);
-        Account accountToAdd = new Account(newAccount.getCurrency(), 9.0);
+        Account accountToAdd = new Account(newAccount.getCurrency(), 0.0);
         System.out.println("konto tworzone w metodzie " + accountToAdd);
         System.out.println("konto z modelu " + newAccount);
         Client client = clientService.getClientByName(name);
         System.out.println(client);
         System.out.println("konto ktore chce dodac: " + accountToAdd);
+        System.out.println(Account.accNumber.getAndIncrement());
         clientService.addAccount(name, accountToAdd);
         clientService.saveToFile();
         return "redirect:/user/{userName}";

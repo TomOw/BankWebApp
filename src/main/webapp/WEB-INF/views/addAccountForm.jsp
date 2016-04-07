@@ -32,7 +32,8 @@
             <fieldset>
                 <legend>Transfer details</legend>
                 <div class="form-group">
-                    <h4>Your account number: ${newAccount.number}</h4>
+                    <h4>Your account number wiil be: ${newAccount.number}</h4>
+                    <h5>Choose the currency</h5>
                     <form:radiobutton path="currency" value="PLN"></form:radiobutton>PLN
                     <form:radiobutton path="currency" value="USD"></form:radiobutton>USD
                     <form:radiobutton path="currency" value="EUR"></form:radiobutton>EUR

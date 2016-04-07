@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Scanner;
+import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * Created by Tomasz on 31.03.2016.
@@ -48,12 +49,15 @@ public class JsonClientRepository implements ClientRepository{
         File file = new File("/Users/Tomasz/Documents/Java/AppInSpring/dataFiles/data.json");
         Scanner in = new Scanner(file);
         listOfClients.clear();
+        int numberOfClients = 0;
         while (in.hasNext()) {
             String one = in.nextLine();
             ObjectMapper mapper = new ObjectMapper();
             Client c = mapper.readValue(one, Client.class);
             this.listOfClients.add(c);
+            numberOfClients++;
         }
+        Account.accNumber = new AtomicLong(10000 + numberOfClients - 1);
 
     }
 

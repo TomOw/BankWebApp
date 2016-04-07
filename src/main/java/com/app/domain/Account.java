@@ -14,7 +14,7 @@ public class Account {
     private String currency;
     private List<Transfer> transferHistory;
 
-    static AtomicLong accNumber = new AtomicLong(100000);
+    public static AtomicLong accNumber = new AtomicLong(100000);
 
     public Account(long number, double balance, String currency) {
         this.number = number;
