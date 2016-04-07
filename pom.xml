@@ -35,11 +35,25 @@
             <version>1.5.1</version>
         </dependency>
         <dependency>
-            <groupId>com.stormpath.spring</groupId>
-            <artifactId>stormpath-spring-security</artifactId>
-            <version>1.0.RC7.7</version>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>4.0.4.RELEASE</version>
         </dependency>
-    </dependencies>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>4.0.4.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-taglibs</artifactId>
+            <version>4.0.4.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>4.0.4.RELEASE</version>
+        </dependency></dependencies>
     <packaging>war</packaging>
 
 

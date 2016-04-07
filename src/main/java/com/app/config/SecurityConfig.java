@@ -1,4 +1,3 @@
-/*
 package com.app.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,10 +7,9 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
-*/
 /**
  * Created by Tomasz on 06.04.2016.
- *//*
+ */
 
 
 
@@ -32,4 +30,3 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
                 .withUser("admin").password("password").roles("USER", "ADMIN");
     }
 }
-*/
