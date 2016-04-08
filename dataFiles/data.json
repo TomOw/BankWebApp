@@ -1,3 +1,7 @@
-{"name":"Bond","id":"5be9ebb9-6b42-4273-bf46-f5116ff34984","account":{"number":10001,"balance":0.0,"transferHistory":[],"currency":"PLN"}}
-{"name":"James","id":"ed2cc0cc-9358-48b7-93de-bb1e4ae7fdfa","account":{"number":10002,"balance":0.0,"transferHistory":[],"currency":"PLN"}}
-{"name":"Agent 007","id":"cb440635-9769-4b27-a086-7dc4a18e6491","account":{"number":10003,"balance":0.0,"transferHistory":[],"currency":"USD"}}
+{"name":"Bond","id":"5be9ebb9-6b42-4273-bf46-f5116ff34984","account":{"number":10001,"currency":"PLN","balance":-100.0,"transferHistory":[{"value":-100.0,"accountFrom":10001,"accountTo":10002,"date":"2016/04/07 20:06:42","sender":"Bond","receiver":"James","title":"For your eyes only"}]}}
+{"name":"James","id":"ed2cc0cc-9358-48b7-93de-bb1e4ae7fdfa","account":{"number":10002,"currency":"PLN","balance":100.0,"transferHistory":[{"value":-100.0,"accountFrom":10001,"accountTo":10002,"date":"2016/04/07 20:06:42","sender":"Bond","receiver":"James","title":"For your eyes only"}]}}
+{"name":"Agent 007","id":"cb440635-9769-4b27-a086-7dc4a18e6491","account":{"number":10003,"currency":"USD","balance":0.0,"transferHistory":[]}}
+{"name":"pejoratywne","id":"f5bb77f7-deee-46f3-8dca-623d8e4b287f","account":{"number":10004,"currency":"EUR","balance":0.0,"transferHistory":[]}}
+{"name":"misia pysia","id":"530ac7f3-ef15-46ac-aa2a-63dab6eac791","account":{"number":0,"currency":null,"balance":0.0,"transferHistory":[]}}
+{"name":"","id":"9aabb51d-d433-4762-b893-67e5ade44ce9","account":{"number":0,"currency":null,"balance":0.0,"transferHistory":[]}}
+{"name":"","id":"d7ef829c-2d08-4366-9a82-f4f4f1c75dd3","account":{"number":0,"currency":null,"balance":0.0,"transferHistory":[]}}

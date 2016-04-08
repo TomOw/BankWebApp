@@ -20,23 +20,22 @@
     </div>
     <div class="row">
         <div class="col-sm-2">
-            <p><a href="/clients/all"><button type="button" class="btn btn-md btn-primary">
-                <span class="glyphicon glyphicon-eye-open"></span>All Clients
-            </button></a></p>
-            <p><a href="/transfer/make"><button type="button" class="btn btn-md btn-primary">
-                <span class="glyphicon glyphicon-sound-stereo"></span>Make transfer
-            </button></a></p>
-            <p><a href="/clients/add"><button type="button" class="btn btn-md btn-primary">
-                <span class="glyphicons glyphicon-fees-payment"></span>Add client
-            </button></a></p>
+            <p><a href="/clients/all">
+                <button type="button" class="btn btn-md btn-primary">
+                    <span class="glyphicon glyphicon-eye-open"></span>All Clients
+                </button>
+            </a></p>
+            <p><a href="/transfer/make">
+                <button type="button" class="btn btn-md btn-primary">
+                    <span class="glyphicon glyphicon-sound-stereo"></span>Make transfer
+                </button>
+            </a></p>
+            <p><a href="/clients/add">
+                <button type="button" class="btn btn-md btn-primary">
+                    <span class="glyphicons glyphicon-fees-payment"></span>Add client
+                </button>
+            </a></p>
         </div>
-    </div>
-    <div class="row">
-        <c:forEach begin="0" end="10">
-            <div class="col-sm-4">
-                Hello
-            </div>
-        </c:forEach>
     </div>
     </div>
 </body>
