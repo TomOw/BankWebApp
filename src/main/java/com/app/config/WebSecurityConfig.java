@@ -16,31 +16,33 @@ public class WebSecurityConfig extends
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
         auth
                 .inMemoryAuthentication()
-                .withUser("user")  // #1
-                .password("password")
-                .roles("USER")
+                .withUser("Bond").password("password").roles("USER")
                 .and()
-                .withUser("admin") // #2
-                .password("password")
-                .roles("ADMIN","USER");
+                .withUser("admin").password("password").roles("ADMIN","USER");
     }
 
     @Override
     public void configure(WebSecurity web) throws Exception {
         web
                 .ignoring()
-                .antMatchers("/resources/**"); // #3
+                .antMatchers("/resources/**");
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
+                /*.authorizeRequests()
+                .anyRequest().permitAll();*/
+                .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/","/clients/all").permitAll() // #4
-                .antMatchers("/make/**").hasRole("ADMIN") // #6
-                .anyRequest().authenticated() // 7
+                .antMatchers("/").permitAll()
+                .antMatchers("/make", "/clients/*").hasRole("ADMIN")
+                .antMatchers("/user/*").hasRole("USER")
+                .anyRequest().authenticated()
                 .and()
-                .formLogin()  // #8
-                .permitAll(); // #5
+                .formLogin().loginPage("/login")
+                .defaultSuccessUrl("/user/me")
+                .permitAll()
+                .and();
     }
 }

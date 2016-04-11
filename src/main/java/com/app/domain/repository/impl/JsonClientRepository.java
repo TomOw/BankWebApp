@@ -80,7 +80,7 @@ public class JsonClientRepository implements ClientRepository{
                 return client;
             }
         }
-        throw new IllegalArgumentException("nie znaleziono takiego klienta");
+        throw new IllegalArgumentException("nie znaleziono takiego klienta " + name);
     }
 
     public Account findAccount(int number) throws IllegalArgumentException{

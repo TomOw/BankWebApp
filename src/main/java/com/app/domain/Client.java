@@ -1,5 +1,6 @@
 package com.app.domain;
 
+import javax.validation.constraints.NotNull;
 import java.util.UUID;
 
 /**
@@ -8,6 +9,7 @@ import java.util.UUID;
 public class Client {
 
     private String id;
+    @NotNull
     private String name;
     private Account account;
 

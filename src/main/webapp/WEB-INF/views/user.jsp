@@ -54,9 +54,12 @@
                     </ul>
                 </section>
                 <p><a href="/clients/all"><button type="button" class="btn btn-md btn-primary">
-                    <span class="glyphicons glyphicons-chevron-left"></span>Back
+                    <span class="glyphicons glyphicons-chevron-left"></span>All Clients
                 </button></a></p>
-                <p><a href="/user/${user.name}/addAccount"><button type="button" class="btn btn-md btn-primary">
+                <p><a href="/"><button type="button" class="btn btn-md btn-primary">
+                    <span class="glyphicons glyphicons-chevron-left"></span>Home
+                </button></a></p>
+                <p><a href="/user/me/addAccount"><button type="button" class="btn btn-md btn-primary">
                     <span class="glyphicons glyphicons-chevron-left"></span>Add Account
                 </button></a></p>
             </li>

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.io.IOException;
+import java.security.Principal;
 
 /**
  * Created by Tomasz on 04.04.2016.
@@ -41,7 +42,10 @@ public class UserController {
     }
 
     @RequestMapping(value = "/{userName}/addAccount", method = RequestMethod.POST)
-    public String processNewAccount(@ModelAttribute ("newAccount") Account newAccount, @PathVariable("userName") String name) throws IOException{
+    public String processNewAccount(@ModelAttribute ("newAccount") Account newAccount, @PathVariable("userName") String name, Principal principal) throws IOException{
+        if (name.equals("me")) {
+            name = principal.getName();
+        }
         clientService.getAllClients();
         System.out.println("imie klienta: " + name);
         Account accountToAdd = new Account(newAccount.getCurrency(), 0.0);
@@ -53,7 +57,21 @@ public class UserController {
         System.out.println(Account.accNumber.getAndIncrement());
         clientService.addAccount(name, accountToAdd);
         clientService.saveToFile();
-        return "redirect:/user/{userName}";
+        return "redirect:/user/me";
+    }
+
+    @RequestMapping(value = "/me")
+    public String myProfile(Model model, Principal principal) throws IOException {
+        //Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        //String name = authentication.getName();
+        String name = principal.getName();
+        clientService.getAllClients();
+        System.out.println("_____________________________---------------------_________________________");
+        System.out.println("Clients name from authentication: " + name);
+        Client client = clientService.getClientByName(name);
+        System.out.println(client);
+        model.addAttribute("user", client);
+        return "user";
     }
 
 }

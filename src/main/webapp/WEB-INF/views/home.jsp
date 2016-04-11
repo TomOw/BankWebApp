@@ -35,6 +35,11 @@
                     <span class="glyphicons glyphicon-fees-payment"></span>Add client
                 </button>
             </a></p>
+            <p><a href="/user/me">
+                <button type="button" class="btn btn-md btn-primary">
+                    <span class="glyphicons glyphicon-fees-payment"></span>My profile
+                </button>
+            </a></p>
         </div>
     </div>
     </div>
