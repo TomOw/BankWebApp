@@ -3,6 +3,8 @@ package com.app.service;
 import com.app.domain.Account;
 import com.app.domain.Client;
 import com.app.domain.Transfer;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
@@ -12,7 +14,7 @@ import java.util.List;
  * Created by Tomasz on 31.03.2016.
  */
 @Repository
-public interface ClientService {
+public interface ClientService{
 
     List<Client> getAllClients() throws IOException;
 
@@ -27,4 +29,6 @@ public interface ClientService {
     void addAccount(String name, Account account);
 
     void saveToFile() throws IOException;
+
+    UserDetails loadUserByUsername(String s) throws UsernameNotFoundException;
 }

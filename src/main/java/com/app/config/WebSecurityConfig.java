@@ -10,16 +10,16 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 @EnableWebSecurity
 @Configuration
-public class WebSecurityConfig extends
-        WebSecurityConfigurerAdapter {
-    @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        auth
-                .inMemoryAuthentication()
-                .withUser("Bond").password("password").roles("USER")
-                .and()
-                .withUser("admin").password("password").roles("ADMIN","USER");
-    }
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
+
+        @Autowired
+        public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+            auth
+                    .inMemoryAuthentication()
+                    .withUser("Bond").password("password").roles("USER")
+                    .and()
+                    .withUser("admin").password("password").roles("ADMIN","USER");
+        }
 
     @Override
     public void configure(WebSecurity web) throws Exception {
@@ -35,7 +35,7 @@ public class WebSecurityConfig extends
                 .anyRequest().permitAll();*/
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/").permitAll()
+                .antMatchers("/", "/logoutSuccessful").permitAll()
                 .antMatchers("/make", "/clients/*").hasRole("ADMIN")
                 .antMatchers("/user/*").hasRole("USER")
                 .anyRequest().authenticated()
@@ -43,6 +43,7 @@ public class WebSecurityConfig extends
                 .formLogin().loginPage("/login")
                 .defaultSuccessUrl("/user/me")
                 .permitAll()
-                .and();
+                .and()
+                .logout().logoutSuccessUrl("/logoutSuccessful");
     }
 }

@@ -44,6 +44,8 @@ public class ClientController {
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public String processAddNewClientForm(@ModelAttribute("newClient") Client newClient) throws IOException {
         Client client = new Client(newClient.getName());
+        client.setUsername(newClient.getUsername());
+        client.setPassword(newClient.getPassword());
         System.out.println(client.toString());
         clientService.addClient(client);
         return "redirect:/clients/all";

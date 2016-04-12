@@ -17,5 +17,10 @@ public class LoginController {
     public String getLoginForm() {
         return "login";
     }
+
+    @RequestMapping(value = "/logoutSuccessful")
+    public String logoutMessage() {
+        return "logout";
+    }
 }
 

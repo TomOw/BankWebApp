@@ -36,6 +36,14 @@
                     <div class="col-lg-10">
                         <form:input path="name" type="text" cssClass="input-lg"></form:input>
                     </div>
+                    <label class="control-label col-lg-2 col-lg-2" for="name">Client's username</label>
+                    <div class="col-lg-10">
+                        <form:input path="username" type="text" cssClass="input-lg"></form:input>
+                    </div>
+                    <label class="control-label col-lg-2 col-lg-2" for="name">Client's password</label>
+                    <div class="col-lg-10">
+                        <form:input path="password" type="text" cssClass="input-lg"></form:input>
+                    </div>
                     <div class="form-group">
                         <div class="col-lg-offset-2 col-lg-10">
                             <input type="submit" class="btn btn-primary" value="Add">

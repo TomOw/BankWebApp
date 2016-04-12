@@ -24,6 +24,8 @@ public interface ClientRepository {
 
     Client getClientByName(String name) throws IllegalArgumentException;
 
+    Client getClientByUsername(String login) throws IOException;
+
     void makeTransfer(Transfer transfer) throws IOException;
 
     void addAccount(String name, Account account);

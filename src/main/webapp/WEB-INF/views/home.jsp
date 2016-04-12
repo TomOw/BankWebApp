@@ -40,6 +40,16 @@
                     <span class="glyphicons glyphicon-fees-payment"></span>My profile
                 </button>
             </a></p>
+            <p><a href="/login">
+                <button type="button" class="btn btn-md btn-primary">
+                    <span class="glyphicons glyphicon-fees-payment"></span>Login
+                </button>
+            </a></p>
+            <p><a href="/logout">
+                <button type="button" class="btn btn-md btn-primary">
+                    <span class="glyphicons glyphicon-fees-payment"></span>Logout
+                </button>
+            </a></p>
         </div>
     </div>
     </div>

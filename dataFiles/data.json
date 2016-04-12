@@ -1,10 +1,3 @@
-{"name":"Bond","id":"5be9ebb9-6b42-4273-bf46-f5116ff34984","account":{"number":10009,"balance":0.0,"transferHistory":[],"currency":"EUR"}}
-{"name":"James","id":"ed2cc0cc-9358-48b7-93de-bb1e4ae7fdfa","account":{"number":10009,"balance":0.0,"transferHistory":[],"currency":"USD"}}
-{"name":"Agent 007","id":"cb440635-9769-4b27-a086-7dc4a18e6491","account":{"number":10003,"balance":0.0,"transferHistory":[],"currency":"USD"}}
-{"name":"pejoratywne","id":"f5bb77f7-deee-46f3-8dca-623d8e4b287f","account":{"number":10004,"balance":0.0,"transferHistory":[],"currency":"EUR"}}
-{"name":"misia pysia","id":"530ac7f3-ef15-46ac-aa2a-63dab6eac791","account":{"number":0,"balance":0.0,"transferHistory":[],"currency":null}}
-{"name":"","id":"9aabb51d-d433-4762-b893-67e5ade44ce9","account":{"number":0,"balance":0.0,"transferHistory":[],"currency":null}}
-{"name":"","id":"d7ef829c-2d08-4366-9a82-f4f4f1c75dd3","account":{"number":0,"balance":0.0,"transferHistory":[],"currency":null}}
-{"name":"","id":"315cc723-60d3-4944-8428-e13920f6643b","account":{"number":0,"balance":0.0,"transferHistory":[],"currency":null}}
-{"name":"","id":"cb198aff-eb40-49a1-b5f7-94d2ea52bb35","account":{"number":0,"balance":0.0,"transferHistory":[],"currency":null}}
-{"name":"admin","id":"b7aa0421-82db-42f7-a443-57926d917c97","account":{"number":0,"balance":0.0,"transferHistory":[],"currency":null}}
+{"name":"James","id":"67167cfc-6ddb-4d5b-8763-6d7b8dc6113b","account":{"number":0,"currency":null,"balance":0.0,"transferHistory":[]},"username":"james","password":"password"}
+{"name":"Bond","id":"4a642bfe-225e-4cfb-8d76-955c59d1cf8e","account":{"number":0,"currency":null,"balance":0.0,"transferHistory":[]},"username":"bond","password":"password"}
+{"name":"admin","id":"5b6820c4-44ee-4ac1-b9f0-3b250aa31faa","account":{"number":0,"currency":null,"balance":0.0,"transferHistory":[]},"username":"admin","password":"password"}
