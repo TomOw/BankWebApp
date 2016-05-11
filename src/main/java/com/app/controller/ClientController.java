@@ -49,5 +49,6 @@ public class ClientController {
         System.out.println(client.toString());
         clientService.addClient(client);
         return "redirect:/clients/all";
+
     }
 }
