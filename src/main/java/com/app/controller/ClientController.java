@@ -50,5 +50,6 @@ public class ClientController {
         clientService.addClient(client);
         return "redirect:/clients/all";
 
+
     }
 }
