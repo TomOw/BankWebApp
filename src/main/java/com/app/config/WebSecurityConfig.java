@@ -12,14 +12,14 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 
-        @Autowired
-        public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-            auth
-                    .inMemoryAuthentication()
-                    .withUser("Bond").password("password").roles("USER")
-                    .and()
-                    .withUser("admin").password("password").roles("ADMIN","USER");
-        }
+    @Autowired
+    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+        auth
+                .inMemoryAuthentication()
+                .withUser("Bond").password("password").roles("USER")
+                .and()
+                .withUser("admin").password("password").roles("ADMIN","USER");
+    }
 
     @Override
     public void configure(WebSecurity web) throws Exception {
@@ -31,19 +31,19 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-                /*.authorizeRequests()
-                .anyRequest().permitAll();*/
                 .csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/", "/logoutSuccessful").permitAll()
-                .antMatchers("/make", "/clients/*").hasRole("ADMIN")
-                .antMatchers("/user/*").hasRole("USER")
+                .antMatchers("/make", "/clients*//*").hasRole("ADMIN")
+                .antMatchers("/user*//*").hasRole("USER")
                 .anyRequest().authenticated()
                 .and()
                 .formLogin().loginPage("/login")
                 .defaultSuccessUrl("/user/me")
                 .permitAll()
                 .and()
-                .logout().logoutSuccessUrl("/logoutSuccessful");
+                .logout().logoutSuccessUrl("/logoutSuccessful")
+                .and()
+                .formLogin().failureUrl("/loginFailed");
     }
 }

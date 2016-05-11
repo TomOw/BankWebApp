@@ -16,6 +16,7 @@
     <div class="jumbotron">
         <div class="container">
             <h1>Bank</h1>
+            <p>You're logged as: ${pageContext.request.userPrincipal.name}</p>
         </div>
     </div>
     <div class="row">

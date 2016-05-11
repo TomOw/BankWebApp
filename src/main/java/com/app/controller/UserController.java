@@ -38,26 +38,31 @@ public class UserController {
         newAccount.setNumber(Account.accNumber.get() + 1);
         model.addAttribute("newAccount", newAccount);
         System.out.println("test debugowaniea");
+        System.out.println(newAccount);
         return "addAccountForm";
     }
 
     @RequestMapping(value = "/{userName}/addAccount", method = RequestMethod.POST)
     public String processNewAccount(@ModelAttribute ("newAccount") Account newAccount, @PathVariable("userName") String name, Principal principal) throws IOException{
+        String userNameFromUrl = name;
         if (name.equals("me")) {
             name = principal.getName();
         }
+        System.out.println("_______________________________________________________________________________________________________________");
         clientService.getAllClients();
         System.out.println("imie klienta: " + name);
+        Account.accNumber.incrementAndGet();
         Account accountToAdd = new Account(newAccount.getCurrency(), 0.0);
         System.out.println("konto tworzone w metodzie " + accountToAdd);
         System.out.println("konto z modelu " + newAccount);
         Client client = clientService.getClientByName(name);
         System.out.println(client);
         System.out.println("konto ktore chce dodac: " + accountToAdd);
-        System.out.println(Account.accNumber.getAndIncrement());
+        System.out.println(Account.accNumber.incrementAndGet());
         clientService.addAccount(name, accountToAdd);
         clientService.saveToFile();
-        return "redirect:/user/me";
+        System.out.println("____________________________________________________________________________________________________________________");
+        return "redirect:/user/" + userNameFromUrl;
     }
 
     @RequestMapping(value = "/me")

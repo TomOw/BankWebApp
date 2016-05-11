@@ -17,6 +17,7 @@
         <div class="jumbotron">
             <div class="container">
                 <h1>Bank</h1>
+                <p>You're logged as: ${pageContext.request.userPrincipal.name}</p>
                 <p>All Clients</p>
             </div>
         </div>

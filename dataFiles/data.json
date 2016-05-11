@@ -1,3 +1,4 @@
-{"name":"James","id":"67167cfc-6ddb-4d5b-8763-6d7b8dc6113b","account":{"number":0,"currency":null,"balance":0.0,"transferHistory":[]},"username":"james","password":"password"}
-{"name":"Bond","id":"4a642bfe-225e-4cfb-8d76-955c59d1cf8e","account":{"number":0,"currency":null,"balance":0.0,"transferHistory":[]},"username":"bond","password":"password"}
-{"name":"admin","id":"5b6820c4-44ee-4ac1-b9f0-3b250aa31faa","account":{"number":0,"currency":null,"balance":0.0,"transferHistory":[]},"username":"admin","password":"password"}
+{"name":"james","id":"9fc49e07-2cca-4ef4-b20c-07fad75b859a","username":"jamson","password":"ja","account":{"number":10002,"currency":"EUR","balance":-500.0,"transferHistory":[{"value":-500.0,"date":"2016/04/12 15:16:35","accountFrom":10002,"accountTo":10003,"sender":"fbausf","receiver":"iufbaiu","title":"iubfi"}]}}
+{"name":"cans","id":"8af367a2-9ce7-49b5-8b52-593fcf637172","username":"oino","password":"ivno","account":{"number":10003,"currency":"EUR","balance":500.0,"transferHistory":[{"value":-500.0,"date":"2016/04/12 15:16:35","accountFrom":10002,"accountTo":10003,"sender":"fbausf","receiver":"iufbaiu","title":"iubfi"}]}}
+{"name":"fau","id":"17d8a9dc-1eb6-47d8-b8c5-f0b34c14433c","username":"ufusbiu","password":"ubif","account":{"number":10004,"currency":"EUR","balance":0.0,"transferHistory":[]}}
+{"name":"admin","id":"1af6cb48-3a38-4cf5-a0ca-f0972f77d0f4","username":"admin","account":{"number":0,"currency":null,"balance":0.0,"transferHistory":[]},"password":"password"}
